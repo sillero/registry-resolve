@@ -15,6 +15,10 @@
   "author": "Gustavo Sillero",
   "email": "gustavo@sille.ro",
   "url": "https://github.com/sillero/registry-resolve",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sillero/registry-resolve.git"
+  },
   "license": "MIT",
   "dependencies": {
     "node-fetch": "^1.5.0",
