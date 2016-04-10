@@ -1,6 +1,6 @@
 {
   "name": "registry-resolve",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Resolve a package version from an npm-like registry",
   "main": "index.js",
   "scripts": {
