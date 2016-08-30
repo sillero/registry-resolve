@@ -32,4 +32,26 @@ resolve(
 resolve('autoprefixer') // version defaults to '*'
   .then(version => { console.log(version); }); // > '6.3.6'
 
+// or
+resolve(
+  {
+    name: 'autoprefixer',
+    full: true // optional, the response is the full package details
+  }
+).then(pkg => { console.log(pkg) })
+/** trimmed output
+{ name: 'autoprefixer',
+  version: '6.4.0',
+  description: 'Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website',
+  keywords: [ 'autoprefixer', 'css', 'prefix', 'postcss', 'postcss-plugin' ],
+  author: { name: 'Andrey Sitnik', email: 'andrey@sitnik.ru' },
+  license: 'MIT',
+  repository:
+   { type: 'git',
+     url: 'git+https://github.com/postcss/autoprefixer.git' },
+  dependencies: ...
+  ...
+}
+**/
+
 ```
